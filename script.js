@@ -1,11 +1,10 @@
-var generateBtn = document.querySelector("#generate");
+// select the generate button
+var generateBtn = window.document.querySelector("#generate");
 
 // create password generator function
 function generatePassword() {
-  // inform the user of upcoming criteria
-
   // let user choose a length for password
-
+  prompt("Choose a length of your password - enter a number of at least 8 and no more than 128");
 
   // let user decide if lowercase letters are to be included
 
