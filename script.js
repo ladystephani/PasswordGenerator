@@ -26,21 +26,21 @@ function generatePassword() {
   if (!lowerCase && !upperCase && !numeric && !special) {
     alert("Please choose at least one character type.")
     //todo:rerun confirm prompts
+    generatePassword();
 
     //one case of choosing all four types
   } else if (lowerCase && upperCase && numeric && special) {
       console.log("all four chosen"); //test succeeded
     
       character = lowercaseLetter.concat(uppercaseLetter, numericValue, specialCharacter)
-      //contatenation test succeeded: console.log(character); 
+      //console.log(character); 
     
-      // choose randomly from variable character with the password length
-      //put below into for loop 
+      // choose randomly from variable character with the password length 
       for (var i = 0; i < number; i++) {
         
         var randomCharacter = character[Math.floor(Math.random() * character.length)];
         //console.log(randomCharacter);
-        
+        password = password.concat(randomCharacter);
 
       }
     
