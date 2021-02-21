@@ -15,20 +15,39 @@ function generatePassword() {
   // let user decide if special characters are to be included
   var special = confirm("Do you want to include special characters?");
   
-  
+  var lowercaseLetter = "abcdefghijklmnopqrstuvwxyz";
+  var uppercaseLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numericValue = "0123456789";
+  var specialCharacter = "!#$%&()*+,-./:;<=>?@[\]^_`{|}~";
+  var character;
   // generate the password and store in a variable named password
-  var password;
+  var password = '';
   // user must choose at least one type
   if (!lowerCase && !upperCase && !numeric && !special) {
     alert("Please choose at least one character type.")
+    //todo:rerun confirm prompts
 
     //one case of choosing all four types
   } else if (lowerCase && upperCase && numeric && special) {
-    console.log("all four chosen")
+      console.log("all four chosen"); //test succeeded
+    
+      character = lowercaseLetter.concat(uppercaseLetter, numericValue, specialCharacter)
+      //contatenation test succeeded: console.log(character); 
+    
+      // choose randomly from variable character with the password length
+      //put below into for loop 
+      for (var i = 0; i < number; i++) {
+        
+        var randomCharacter = character[Math.floor(Math.random() * character.length)];
+        //console.log(randomCharacter);
+        
+
+      }
+    
 
     //four cases of choosing three types
   } else if (lowerCase && upperCase && numeric && !special) {
-    console.log("abc")
+    console.log("abc");
     
     
   } else if (lowerCase && upperCase && !numeric && special) {
@@ -75,7 +94,7 @@ function generatePassword() {
     console.log("d")
   }
   
-  
+
   // alert password on page
   alert("Here's your password: " + password);
 }
