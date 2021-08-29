@@ -1,6 +1,6 @@
 # PasswordGenerator-assignment3
 
-Go to the Deployed Web Application Here:<div style="display: inline">https://ladystephani.github.io/PasswordGenerator-assignment3/</div>
+Go to the Deployed Web Application Here:<div style="display: inline">https://ladystephani.github.io/PasswordGenerator/</div>
 
 ## Description
 This assignment is written for Columbia Engineering Coding Bootcamp. The focus is on creating an application that enables a company's employees to generate random and secure passwords. The passwords should enable employees to protect sensitive data.
